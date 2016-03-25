@@ -2,7 +2,12 @@ import { Component } from 'angular2/core';
 
 @Component({
   selector: 'my-story',
-  template: '<h1>Hello World</h1>'  
+  template: `
+    <h3>{{story.name}}</h3>
+    <h3 [innerText]="story.name"></h3>
+    <div [style.color]="color">{{story.name}}</div>
+    <div>{{story | json}}</div>
+  `
 })
 
 export class StoryComponent {

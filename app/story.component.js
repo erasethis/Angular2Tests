@@ -26,7 +26,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 StoryComponent = __decorate([
                     core_1.Component({
                         selector: 'my-story',
-                        template: '<h1>Hello World</h1>'
+                        template: "\n    <h3>{{story.name}}</h3>\n    <h3 [innerText]=\"story.name\"></h3>\n    <div [style.color]=\"color\">{{story.name}}</div>\n    <div>{{story | json}}</div>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], StoryComponent);
